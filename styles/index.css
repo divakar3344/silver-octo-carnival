@@ -1,0 +1,87 @@
+h1{
+    background-color: yellow;
+    /* by default margin : top left bottom left it is a shorthand */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+    position: fixed;
+}
+
+p{
+    /* margin collapsing means if two margins come together the margin with the greater size will be the gap in between
+    if h1 has margin 40px and p has margin 50px the gap between them will not be 90px the gap between them will be 50px only */
+    background-color: red;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.primary-text{
+    background-color: red;
+    display: inline-block;
+
+    /* display : none the element was never there neither it will occupy any space
+    but if we do visibility hidden: you are not able to see the element but it occupies the space */
+}
+
+.secondary-text{
+    /* you cannot change width and height of inline elements */
+    /* if you are using block it will be occupying a whole row */
+    /* we want elements together in the same line plus we want to change width and height then we should use inline block */
+    background-color: green;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+/* z index is for which element will be on top and which element will be below is defines casscading 
+without z index if everyone has equal z index then the element lower comes above the upper element
+higher z index will come above . z-index only applies for non-static only it can be +ve or -ve 
+if one is non-static(relative or sticky) and other is static then non-static will come above 
+child will be always on the top of the parent*/
+
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    border: 2px solid blue;
+    margin: 50px;
+    text-align: center;
+    /* transform: scaleX(1.5); */
+    /* transform: skewX(30deg); */
+    /* transform: rotate(45deg); */
+    transform: translate(45px);
+}
+
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    border: 2px solid black;
+    margin: 50px;
+    text-align: center;
+    /* transform: scaleY(1.5); */
+    /* transform: skewY(30deg); */
+    /* transform: rotate(0.5turn); */
+    transform: translateY(45px);
+}
+
+.div3{
+    width: 100px;
+    height: 100px;
+    background-color:yellow;
+    border: 2px solid red;
+    margin: 80px;
+    text-align: center;
+    transition: transform 2s ;
+}
+
+.div3:hover{
+    /* transform: scale(1.5,1.5) */
+    /* transform: skew(30deg, 30deg); */
+    /* transform: rotate(45deg); */
+    transform: translate(45px,45px);
+}

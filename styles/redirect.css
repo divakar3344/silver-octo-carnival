@@ -1,0 +1,44 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* position: static; by default it is static position */
+    /* position: relative; everything will remain same and only this particular element will change */
+    /* position: absolute; everyone will think that this element is not present and this element will arrange itself in the whole screen. */
+
+
+}
+
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.div3{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+/* but here 200px for content fir padding plus border extra add krke 206px */
+.sizing-content-example{
+    width: 200px;
+    height: 150px;
+    background-color: yellow;
+    border: 2px solid red;
+    padding: 2px;
+    display: inline-block;
+    box-sizing: content-box;
+}
+
+/* if total width is 200 to 200 hi krega sb padding vagera leke */
+.sizing-border-example{
+    width: 200px;
+    height: 150px;
+    background-color: yellow;
+    border: 2px solid red;
+    padding: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+}

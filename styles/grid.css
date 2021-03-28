@@ -1,0 +1,39 @@
+.grid-container{
+    /* same concept of inline grid as that of inline  */
+    /* grid is not only to make tables */
+    display: grid;
+    /* fr means fraction it will divide tha space equally among the columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* to give gap between rows */
+    grid-row-gap: 25px;
+    /* to control row width */
+    grid-template-rows:50px 50px 50px ;
+    grid-column-gap: 20px;
+    
+    /* align-items: is for column; justify-items: is for row; 
+    these two are only for items inside a box*/
+    align-items: center;
+    justify-items: center;
+
+    /* align-content: and justify-content is for the whole grid box and matter inside it; */
+    justify-content: space-between;
+}
+
+.grid-item{
+    background-color: yellow ;
+    border: 2px solid red;
+}
+
+.grid-item-1{
+    /* first column se 4th column tk spread ho jayega */
+    grid-column-start:1;
+    grid-column-end: 4;
+
+    /* first row se last row tk spread ho jayega */
+    grid-row-start:1 ;
+    grid-row-end: 3;
+    background-color: yellow;
+    border: 2px solid red;
+}
+

@@ -1,0 +1,63 @@
+.animation-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    text-align: center;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: heading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes heading{
+    100% {transform: scale(2.5,2.5);}
+}
+.animation-outer-circle{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 50%;
+    animation-name: circle-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: reverse; alternate; alternate-reverse */
+}
+
+.animation-outer-circle:hover{
+    animation-play-state: paused;
+}
+
+@keyframes circle-animation{
+    100% {transform: rotate(360deg);}
+}
+
+.animation-inner-circle{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+.animation-jumping-circle{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: jumping-circle;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jumping-circle{
+    25% {transform: translate(250px,250px);}
+    50% {transform: translate(350px,0px);}
+    75% {transform: translate(500px,250px);}
+    100% {transform: translate(600px,0px);}
+}

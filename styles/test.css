@@ -1,0 +1,116 @@
+/* 1 em = size of pixels of parent // agar parent 50px ho toh child ka 1 em matlab 50px */
+/* 1 rem = size of pixels of root element */
+/* go for either em rem or % it will help in mobile responsiveness */
+.main-banner{
+    /* background-image: url(/home/divakar/Desktop/CP/test/FINAL_PROJECT/pictures/banner.jpeg); */
+    /* background-size: 100% auto; // contain 
+    background-position: 100px 200px; <-- x y  corrdinate jaha se background image ka top left corner shuru hoga- */
+    /* we can do to left also and can include any number of colors we can use rgb(255,255,255) it will generate a color  */
+    /* background-image: linear-gradient(to right,#f6dfeb,#e4bad4 50%); */
+    /* 50% means it will start at 50% */
+    /* background-image: linear-gradient(45deg,red,green); */
+    width: 98%;
+    height: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(to bottom,rgb(13,115,10,0.5),rgb(50,224,96,0.5)),url(/home/divakar/Desktop/CP/test/FINAL_PROJECT/pictures/main_banner.jpeg); */
+    background-image: url(/home/divakar/Desktop/CP/test/FINAL_PROJECT/pictures/main_banner.jpeg);
+}
+.offering-heading{
+    text-align: center;
+    /* 2px right shift and 2 px bottom shift we can give negative values it
+    will shift towards left and top next is bluriness*/
+    text-shadow: 2px 2px 2px red;
+    /* text decoration line overline linethrough */
+    text-decoration-line: underline ;
+    /* style can be wavy double dotted */
+    text-decoration-style: solid;
+    text-decoration-color: red;
+}
+
+.price-container{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.price-card{
+    width: 150px;
+    height: 200px;
+    /* border: border width border-style border-color;
+    border can be solid dashed dotted ridge groove inset outset double
+    border-top: border-bottom: everything is possible border-top-color: */
+    border: 0px solid gray;
+    text-align: center;
+    border-radius: 5px; 
+    /* border-radius: 50%; gives a oval if height and width are not same
+    if height and width are same then border-radius: gives circle; 
+    border radius : 50%/10% this is also a way bottom-top-right-radius everything is possible*/
+
+    /* if want shadow on right and top enter a negative number 
+    box-shadow: right-shadow bottom-shadow blurr spread  ; */
+    box-shadow: 2px 4px 6px 2px gray, -2px -4px lightgray inset;
+
+
+    font-family: 'Fredericka the Great', cursive;
+    /* font font-weight: normal-400 bold-700 bolder means more bold than parent its respective similarly lighter means lighter than the parents value; */
+}
+.card-description{
+    font-size: 15px ;
+    letter-spacing: 0.7px;
+}
+
+.card-cta{
+    width: 90px;
+    height: 20px;
+    border: 0px;
+    background-color: #ff219f;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 10px;
+    box-shadow: 2px 2px 4px lightgray;
+    cursor: pointer;
+    outline: 0;
+    transition: transform 1s;
+    transition: width 2s; height 10s;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.card-cta:hover{
+    background-color:#8f024f;
+    height: 30px;
+    width: 110px;
+}
+
+.card-cta:active{
+    transform: scale(1.1, 1.1)
+}
+
+.price-card{
+    background-color: #caf7e3;
+}
+/* .price-container{
+    display: flex;
+    background-color: yellow; */
+    /* justify-content: flex-end flex-start space-around space-evenly; try every four by yourself */
+    /* justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+/* }
+
+.price-card{
+    width: 30%;
+    border: 1px solid gray;
+    text-align: center;
+    
+}  */
